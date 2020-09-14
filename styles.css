@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #313333;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: black;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  background-color: black;
+  list-style: none;
+}
+
+.logo {
+  background-color: black;
+}
+
+#header-img {
+  width: 10vw;
+  cursor: pointer;
+  background-color: black;
+}
+
+#nav-bar li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 50px;
+}
+
+#nav-bar a {
+  transition: all 0.3s ease 0s;
+}
+
+#nav-bar a:hover {
+  color: #2498db;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+button {
+  font-weight: 400;
+  color: black;
+  background-color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: #2498db;
+}
+
+#buy-btn {
+  background-color: black;
+}
+
+@media only screen and (max-width: 660px) {
+  #nav-bar a {
+    font-size: 0.9em;
+  }
+  button {
+    font-size: 0.7em;
+    margin-right: 1rem;
+  }
+  .navbar-links {
+    display: none;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  #nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  #nav-bar a {
+    font-size: 0.8em;
+  }
+}
+
+#product {
+  margin-top: 100px;
+  background-color: black;
+}
+
+.headings {
+  padding: 30px 0px;
+  margin: auto;
+  margin-top: -20px;
+  background: rgb(70, 69, 69);
+  background: radial-gradient(
+    circle,
+    rgba(70, 69, 69, 1) 0%,
+    rgba(49, 51, 51, 1) 100%
+  );
+}
+
+.headings > h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 80px;
+  font-family: "Ubuntu", sans-serif;
+  background: inherit;
+  text-shadow: 2px 2px 8px #2e2e2e;
+}
+
+.headings > h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Ubuntu", sans-serif;
+  background: inherit;
+  text-shadow: 2px 2px 8px #302f2f;
+}
+
+@media only screen and (max-width: 750px) {
+  .headings > h1 {
+    font-size: 60px;
+  }
+  .headings > h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  .headings > h1 {
+    font-size: 50px;
+  }
+  .headings > h2 {
+    font-size: 15px;
+  }
+}
+
+iframe {
+  margin: auto;
+  width: 100vw;
+  height: 90vh;
+}
+
+@media only screen and (max-width: 750px) {
+  iframe {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  iframe {
+    height: 50vh;
+  }
+}
+
+#features {
+  background: radial-gradient(
+    circle,
+    rgba(70, 69, 69, 1) 0%,
+    rgba(49, 51, 51, 1) 65%
+  );
+  padding-bottom: 20px;
+}
+
+#feature-head {
+  text-align: center;
+  margin: 0px 50px 40px 50px;
+  background-color: inherit;
+}
+
+#feature-head > h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 100px;
+  background-color: inherit;
+  text-shadow: 2px 2px 8px #2e2e2e;
+}
+
+#feature-head > p {
+  margin: 15px auto;
+  color: #e5e2e2;
+  font-weight: 550;
+  background-color: inherit;
+  text-shadow: 2px 2px 8px #302f2f;
+}
+
+@media only screen and (max-width: 735px) {
+  #feature-head > h1 {
+    font-size: 40px;
+  }
+  #feature-head > p {
+    font-size: 0.9em;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  justify-items: center;
+  align-items: center;
+  margin: 0px 200px;
+  background-color: inherit;
+}
+
+@media only screen and (max-width: 1000px) {
+  .grid {
+    margin: 0px 10%;
+  }
+}
+
+.grid-item {
+  text-align: center;
+  background-color: inherit;
+}
+
+.grid-item > h3 {
+  font-size: 1.2rem;
+  margin: 10px 0px;
+  background-color: inherit;
+}
+
+.grid-item > p {
+  color: #bbb5b5;
+  font-weight: 550;
+  font-size: 0.9rem;
+  background-color: inherit;
+}
+
+.icon {
+  margin: 20px 0px;
+  background-color: inherit;
+}
+
+.circle-icon {
+  background: #89b5f8;
+  height: 108px;
+  width: 108px;
+  padding: 30px;
+  border-radius: 50%;
+  box-shadow: 0.05em 0.05em 0 0 rgba(231, 219, 219, 0.125);
+}
+
+@media only screen and (max-width: 740px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-item > h3 {
+    font-size: 1rem;
+  }
+  .grid-item > p {
+    font-size: 0.8rem;
+  }
+}
+
+#contact-header {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 8px #464646;
+}
+
+@media only screen and (max-width: 585px) {
+  #contact-header {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  #contact-header {
+    font-size: 1.1rem;
+  }
+}
+
+form {
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  justify-content: center;
+}
+
+input#email {
+  height: 5vh;
+  width: 268px;
+  text-align: center;
+  border: solid 2px;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-right: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+input#email:hover {
+  border-color: #2498db;
+}
+
+input#email:focus {
+  border-color: #2498db;
+}
+
+input#submit {
+  height: 5vh;
+  width: 108px;
+  border: solid;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+input#submit:hover {
+  background-color: black;
+}
+
+footer {
+  margin: 50px auto 0px auto;
+  background-color: #c9c3c3;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+  padding: 20px;
+  justify-content: flex-end;
+  background-color: inherit;
+  width: 40vw;
+}
+
+footer li {
+  color: #2f3132;
+  background-color: inherit;
+  padding: 0px 20px;
+}
+
+footer a {
+  color: #2f3132;
+  background-color: inherit;
+  padding: 0px 20px;
+  transition: all 0.3s ease 0s;
+}
+
+footer a:hover {
+  color: #2a92d8;
+}
+
+footer span {
+  background-color: inherit;
+  color: #2f3132;
+  padding: 25px 0px 0px 30px;
+  font-size: 0.8rem;
+  width: auto;
+}
+
+@media only screen and (max-width: 780px) {
+  footer ul {
+    width: 20vw;
+  }
+
+  footer span {
+    font-size: 0.6rem;
+  }
+
+  footer a {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  footer span {
+    color: transparent;
+  }
+}

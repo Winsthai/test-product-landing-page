@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product landing page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/cf18e85237.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <div id="page-wrapper">
+    <header id="header">
+      <div class="logo">
+        <a href="https://www.sony.com/" target="_blank"
+          ><img
+            id="header-img"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sony_logo_%28white%29.svg/1200px-Sony_logo_%28white%29.svg.png"
+            alt
+          />
+        </a>
+      </div>
+      <nav id="nav-bar">
+        <a class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a class="nav-link" href="#product">Product</a></li>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <a
+        id="buy-btn"
+        href="https://www.amazon.ca/Sony-WH-1000XM4-Canceling-Headphones-WH1000XM4/dp/B0863TXGM3?th=1"
+        target="_blank"
+        ><button>Buy now</button></a
+      >
+    </header>
+  </div>
+  <body>
+    <section id="product">
+      <div class="headings">
+        <h1>Sony WH-1000XM4</h1>
+        <h2>
+          Sony’s intelligent, industry-leading noise cancelling headphones
+        </h2>
+      </div>
+      <iframe
+        id="video"
+        width="100%"
+        height="800"
+        src="https://www.youtube.com/embed/WKdotkKJQYQ"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section id="features">
+      <div id="features">
+        <div id="feature-head">
+          <h1>Features</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+            quis!.
+          </p>
+        </div>
+        <div class="grid">
+          <div class="grid-item">
+            <div class="icon">
+              <i class="fas fa-3x fa-volume-mute circle-icon"></i>
+            </div>
+            <h3>Industry-leading noise canceling</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              molestias facilis rerum eveniet est quia.
+            </p>
+          </div>
+          <div class="grid-item">
+            <div class="icon">
+              <i class="fas fa-3x fa-music circle-icon"></i>
+            </div>
+            <h3>Next-level music with Edge-AI</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              molestias facilis rerum eveniet est quia.
+            </p>
+          </div>
+          <div class="grid-item">
+            <div class="icon">
+              <i class="fas fa-3x fa-battery-full circle-icon"></i>
+            </div>
+            <h3>30-hour battery life (quick charging)</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              molestias facilis rerum eveniet est quia.
+            </p>
+          </div>
+          <div class="grid-item">
+            <div class="icon">
+              <i class="fas fa-3x fa-fingerprint circle-icon"></i>
+            </div>
+            <h3>Touch Sensor controls</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              molestias facilis rerum eveniet est quia.
+            </p>
+          </div>
+          <div class="grid-item">
+            <div class="icon">
+              <i class="fas fa-3x fa-headphones circle-icon"></i>
+            </div>
+            <h3>Dual Noise Sensor technology</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              molestias facilis rerum eveniet est quia.
+            </p>
+          </div>
+          <div class="grid-item">
+            <div class="icon">
+              <i class="fas fa-3x fa-microphone circle-icon"></i>
+            </div>
+            <h3>Speak-to-chat technology</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              molestias facilis rerum eveniet est quia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div id="contact">
+        <h2 id="contact-header">
+          Receive updates about products, news, and more
+        </h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="EMAIL ADDRESS"
+            required
+          />
+          <input id="submit" type="submit" value="SUBSCRIBE" />
+        </form>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <span> &#169 2020 Sony. All rights reserved </span>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </footer>
+</html>
